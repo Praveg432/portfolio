@@ -1,0 +1,297 @@
+<html>
+    <head>
+		<title>Portfolio</title>
+        <style>
+			#header{
+                background-color: rgba(0%,0%,0%, .6);
+                width:100%;
+                height:10%;
+                position:fixed;
+                left:0px;
+				color:white;
+				top:0%;
+                }
+
+			#footer{
+				background-color: black;
+                width:100%;
+                height:10%;
+                color:white;
+                position:relative;
+				left:0px;
+				bottom:0px;
+				font-size:200%;
+				font-family: courier;
+			}
+			
+			#nav{
+			float:right;
+			width:40%;
+			margin-top:1.5%
+			}
+			
+			#about,#skills,#experiences,#projects{
+			color:white;
+			padding:1%;
+			background:none;
+			border:none;
+			font-family: Courier, monospace;
+			font-weight:100;
+			font-size:20px;
+			}
+			
+			#about,#experiences{
+			background-color:#0e0a18;
+			}
+			
+			#skills,#projects{
+			color:#ff490c;
+			}
+			
+			#title{
+			width:58%;
+			float:left;
+			text-align:left;
+			margin-left:2%;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size:50px;
+			font-weight:bold;
+			}
+			
+			.hero-image {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg.jpg");
+			height: 100%;
+			top:10%
+			background-position: right;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: static;
+			}
+			.hero-text {
+			text-align: center;
+			position: relative;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			}
+			
+			#content{
+			color:white;
+			font-family:arial;
+			}
+			
+			#aboutme,#experiencesme{
+			float:left;
+			text-align:justify;
+			margin-left:10%;
+			width:50%;
+			}
+			
+			#image,#image3{
+			float:right;
+			margin-top:10%;
+			width:25%;
+			margin-bottom:10%;
+			transition: width .5s; 
+			}
+			
+			#image3:hover,#image:hover,#image1:hover,#image4:hover{
+			width:30%;
+			}
+			
+			#skillsme,#projectsme{
+			text-align:justify;
+			float:right;
+			margin-right:10%;
+			width:50%;
+			}
+			
+			#image1,#image4{
+			float:left;
+			width:25%;
+			margin-top:10%;
+			margin-left:10%;
+			transition: width .5s;
+			}
+			
+			#image3{
+			margin-top:10%;
+			}
+			
+			
+			@media screen and (orientation:portrait){
+			#header{
+			background-color: rgba(0%,0%,0%, .4);
+			height:10%;
+			}
+			.hero-text {
+			font-size:150%;
+			}
+			#about,#skills,#experiences,#projects{
+			padding:0%;
+			font-size:200%;
+			margin-left:3%;
+			margin-right:3%;
+			margin-top:0%;
+			}
+			#nav{
+			font-size:100%;
+			width:100%;
+			position:relative;
+			margin-top:-2%;
+			margin-bottom:0%;
+			}
+			#title{
+			porition:relative;
+			margin-top:2%;
+			margin-bottom:0%;
+			width:100%;
+			text-align:center;
+			}
+			#footer{
+			height:5%;
+			}
+			.hero-image {
+			height: 40%;
+			top:10%;
+			}
+			.hero-text {
+			font-size:150%;
+			top: 50%;
+			left: 50%;
+			}
+			#text{
+			font-size:200%;
+			}
+			#aboutme,#experiencesme{
+			text-align:justify;
+			margin-left:10%;
+			width:80%;
+			margin-right:10%;
+			margin-bottom:4%;
+			}
+			
+			#image{
+			float:none;
+			margin-top:10%;
+			margin-left:35%;
+			margin-right:35%;
+			width:50%;
+			}
+			
+			#image3{
+			float:none;
+			margin-top:10%;
+			margin-left:30%;
+			margin-right:35%;
+			width:50%;
+			}
+			
+			#image3:hover,#image:hover,#image1:hover,#image4:hover{
+			width:55%;
+			}
+			#space{
+			height:5%;
+			}
+			
+			#skillsme,#projectsme{
+			text-align:justify;
+			margin-left:10%;
+			width:80%;
+			margin-right:10%;
+			margin-bottom:2%;
+			}
+			
+			#image1,#image4{
+			float:none;
+			margin-left:30%;
+			margin-right:35%;
+			width:50%;
+			}
+			}
+        </style>
+    </head>
+    <body style=" background-color:black;">
+		<div id="header" align="center">
+			<div id="title" >
+				<p style="margin-top:2%;" onclick="document.location = 'index.html\#content'">PORTFOLIO</p>
+			</div>
+			<div id="nav">
+				<button id="about" align="left" onclick="document.location = 'index.html\#topic1'">ABOUT</button>
+				<button id="skills" align="left" onclick="document.location = 'index.html\#topic2'">SKILLS</button>
+				<button id="experiences" align="left" onclick="document.location = 'index.html\#topic3'">EXPERIENCES</button>
+				<button id="projects" align="left" onclick="document.location = 'index.html\#topic4'">PROJECTS</button>
+			</div>
+		</div> 
+		<div id="content">
+		<div class="hero-image">
+			<div class="hero-text">
+				<h1>Welcome to the Virtual Portfolio</h1>
+				<p id="text">of Praveg Vashishtha</p>
+				<a id="skills" style="font-weight:bolder;text-decoration:none;margin-top:0px;font-size:200%;" href="https://www.linkedin.com/in/om-vashishtha-285400175"> Contact Me-></a>
+			</div>
+		</div>
+		<div id="topic1" style="height:70%;margin-bottom:10%;margin-top:20%;">
+		<div id="aboutme">
+		<h1>Hi! I'm Praveg</h1>
+		<h1 style="font-size:400%;text-align:left;">Knowledge Is Power</h1>
+		<p style="text-indent: 5%;"> I am an engineering student and I am a passionate learner. I never give up an oportunity to try new things and learn new concepts
+		because I believe that we grow as we learn and once we stop the process of acquiring knowledge then we basically start our own downwards spiral.</p>
+		<p style="text-indent: 5%;"> I am curently a second year student of B.tech Information Technology, at Bundelkhand Institute of Engineering and Technology, Jhansi.</p>
+		<a id="skills" style="font-weight:bolder;text-decoration:none;margin-top:0px;font-size:100%;" href="https://www.linkedin.com/in/om-vashishtha-285400175">Visit my LinkedIn page for more information about me.</a>
+		</div>
+		<div id="image"><a href="https://www.linkedin.com/in/om-vashishtha-285400175"><img src="me.jpg" width="60%" ></a></div>
+		</div><div id="space"></div>
+		<div id="topic2" style="height:70%;margin-bottom:10%;margin-top:10%;">
+		<br><br><br>
+		<div id="skillsme" style="float:right;">
+		<h1>My Skills</h1>
+		<h1 style="font-size:400%;text-align:left;">Problem solving, Communication & Teamwork</h1>
+		<p style="text-indent: 5%;"> I am experienced in core JAVA and C programming along with Python. Database management via SQL is also something that i've studied in detail.
+		Currently I'm studying Web Technology and CyberSecurity.</p>
+		<p style="text-indent: 5%;"> Apart from there technical skills I'm also a fluent english speaker and have decent experience of working in a team and managing events. </p>
+		<a id="skills" style="font-weight:bolder;text-decoration:none;margin-top:0px;font-size:100%;" href="https://www.linkedin.com/in/om-vashishtha-285400175">Visit my LinkedIn page for more information about me.</a>
+		</div>
+		<div id="image1" style="float:left;"><a href="https://www.linkedin.com/in/om-vashishtha-285400175"><img src="me2.jpeg" width="80%" ></a>
+		</div>
+		</div><div id="space"></div>
+		<div id="topic3" style="height:70%;margin-bottom:10%;margin-top:20%;">
+		<br><br><br>
+		<div id="experiencesme">
+		<h1>Work Experiences</h1>
+		<h1 style="font-size:400%;text-align:left;">Implementing the Knowledge</h1>
+		<p style="text-indent: 5%;"> I never leave any opportunity to gain experiences and thus I cherish new challenges. </p>
+		<p style="text-indent: 5%;"> I was a part of the college cabinet in my school time for 3 consecutive years (2015-2018) and was awarded principal's silver medal for all-rounder performance. Also I did internship in Noteseasy in Customer Support department for 2 months. I am an active member of my college communities like the Literary Sub Council and the SCOIT.</p>
+		<a id="skills" style="font-weight:bolder;text-decoration:none;margin-top:0px;font-size:100%;" href="https://www.linkedin.com/in/om-vashishtha-285400175">Visit my LinkedIn page for more information about me.</a>
+		</div>
+		<div id="image3"><a href="https://drive.google.com/file/d/0B2eEpZ7QGQjyVWpTeDl2eGQ1SDJicldfcldJU3E0SXlBLWtB/view?usp=sharing"><img src="certi5.jpg" width="80%" ></a></div>
+		</div><div id="space"></div>
+		<div id="topic4" style="height:70%;margin-bottom:10%;margin-top:10%;">
+		<br><br><br>
+		<div id="projectsme" style="float:right;">
+		<h1>My Projects</h1>
+		<h1 style="font-size:400%;text-align:left;">Successful Implementation</h1>
+		<p style="text-indent: 5%;"> I worked in multiple projects which show my knowledge of the subjects. I made a text bank using java, an Inventory Management System via Core Java and JDBC. Also I've worked on building a webpage via HTML , CSS and Javascript.</p>
+		<a id="skills" style="font-weight:bolder;text-decoration:none;margin-top:0px;font-size:100%;" href="https://www.linkedin.com/in/om-vashishtha-285400175">Visit my LinkedIn page for more information about me.</a>
+		</div>
+		<div id="image4" style="float:left;">
+		<a href="https://drive.google.com/file/d/1hYrmPeLlAmVCgKMhKVhemg3r7PqhrDX7/view?usp=sharing"><div>
+		<img src="certi1.png" width="40%" >
+		<img src="certi2.png" width="40%" >
+		</div>
+		<div>
+		<img src="certi3.png" width="40%" >
+		<img src="certi4.png" width="40%" >
+		</div></a>
+		</div>
+		</div><div id="space"></div>
+		</div>
+		<div id="footer" align="center"> 
+		<a href="https://www.facebook.com/om.vashishtha.7"><img src="social1.png" width="5%" style="padding:4%;"></a>
+		<a href="mailto:omvashishtha432@gmail.com"><img src="social2.png" width="5%" style="padding:4%;"></a>
+		<a href="https://www.instagram.com/pravegvashishtha/"><img src="social3.png" width="5%" style="padding:4%;"></a>
+		<a href="https://www.linkedin.com/in/om-vashishtha-285400175"><img src="social4.png" width="5%" style="padding:4%;"></a>
+		</div>
+	</body>
+</html>
